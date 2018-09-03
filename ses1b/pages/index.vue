@@ -2,13 +2,8 @@
   <section class="container">
     <div>
       <app-logo/>
-      <!-- <h1 class="title">
-      </h1> -->
-      <!-- <h2 class="subtitle">
-        doing this to carry the boys in ses1b
-      </h2> -->
         <section class="textContainer">
-        <at-input v-model="inputValue" placeholder="hey"></at-input> 
+        <at-input v-model="inputValue" placeholder="Username"></at-input> 
         </section>
         <section class="textContainer">
         <at-input v-model="password" type="password" placeholder="Password"></at-input>
@@ -18,9 +13,15 @@
         <at-button size="large"  >Login</at-button>
         </nuxt-link>
       </div>
+
+
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="241608656701-phqaco84cfvd1ocs0btuidk1t7f0j0ra.apps.googleusercontent.com.apps.googleusercontent.com">
+<div style="padding-top: 15px" class="g-signin2" data-onsuccess="onSignIn"></div>
     </div>
-    
-  </section>
+      </section>
+      
 </template>
 
 <script>
@@ -56,13 +57,6 @@ padding-top: 10px
   letter-spacing: 1px;
 }
 
-/* .subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-} */
 
 .links {
   padding-top: 15px;

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <at-menu mode="horizontal" active-name="2">
-      <at-menu-item name="1" to='/homepage'><i class="icon icon-map-pin"></i>Maps</at-menu-item>
+    <at-menu mode="horizontal" active-name="2" style="width:100%">
+      <at-menu-item name="1" to='/app'><i class="icon icon-map-pin"></i>Maps</at-menu-item>
       <at-menu-item name="2" to="/message"><i class="icon icon-message-square"></i>Message</at-menu-item>
       <at-menu-item name="3" to="/heart"><i class="icon icon-heart-on"></i>Heart</at-menu-item>
       <at-menu-item name="4" to="/settings"><i class="icon icon-settings"></i>Settings</at-menu-item>
@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
@@ -26,6 +26,7 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
 
 .button--green {
   display: inline-block;
