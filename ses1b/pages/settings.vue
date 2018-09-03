@@ -16,7 +16,7 @@
     <at-menu-item name="2-3">Heart Rate Data</at-menu-item>
     <at-menu-item name="2-4">Misc</at-menu-item>
   </at-submenu>
-  <at-menu-item to="/"><i class="icon icon-home"></i>Log out</at-menu-item>
+  <at-menu-item to="/logout"><i class="icon icon-home"></i>Log out</at-menu-item>
 </at-menu>
 
     </section>

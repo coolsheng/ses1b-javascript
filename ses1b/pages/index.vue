@@ -13,12 +13,11 @@
         <at-button size="large"  >Login</at-button>
         </nuxt-link>
       </div>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 
+<meta name="google-signin-client_id" content="79211080622-dvn6hr7esbil545oabc8fn01k5lmq4os.apps.googleusercontent.com">
+  <div style="margin-top: 12px" id="google-signin-btn"></div>
 
-
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-<meta name="google-signin-client_id" content="241608656701-phqaco84cfvd1ocs0btuidk1t7f0j0ra.apps.googleusercontent.com.apps.googleusercontent.com">
-<div style="padding-top: 15px" class="g-signin2" data-onsuccess="onSignIn"></div>
     </div>
       </section>
       
@@ -31,8 +30,26 @@ export default {
   layout: 'blank',
   components: {
     AppLogo
-  }
+  },
+    methods: {
+    onSignIn (user) {
+            const profile = user.getBasicProfile()
+          this.$Message.success('Signed in successfully as ' + profile.getName())
+      console.log('Name: ' + profile.getName());
+      
 }
+},
+  mounted() {
+    gapi.signin2.render('google-signin-btn', { // this is the button "id"
+      onsuccess: this.onSignIn // note, no "()" here
+    })
+  }
+
+  }
+
+
+
+
 </script>
 
 <style scoped>
