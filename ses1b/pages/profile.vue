@@ -19,11 +19,11 @@
   <at-radio label="3">Do not wish to disclose</at-radio>
 </at-radio-group>
 <p class="demo-desc">Birthday</p>
-<div class="row no-gutter">
+<div class="row no-gutter" style="margin-left: 20px">
   <div >
     <at-input-number :min="1" :max="31"></at-input-number>
   </div>
-  <at-select v-model="model8" filterable size="large" style="width: 240px">
+  <at-select v-model="model8" filterable size="large" style="width: 240px; margin-left: 20px">
   <at-option value="1">January</at-option>
   <at-option value="2">February</at-option>
   <at-option value="3">March</at-option>
