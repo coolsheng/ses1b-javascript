@@ -72,7 +72,7 @@
 
 <at-button type="primary" @click="previousStep" style="margin-top: 12px;">Prev</at-button>
 <at-button type="primary" v-if='current < 2' @click="nextStep" style="margin-top: 12px; margin-left: 12px">Next</at-button>
-<nuxt-link to="/homepage"> 
+<nuxt-link to="/message"> 
         <at-button v-if='current==2' type="primary" style="margin-top: 12px; margin-left: 12px">Submit</at-button>
 </nuxt-link>
 
