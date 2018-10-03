@@ -128,11 +128,10 @@
          <div class="clear">
               <p class="intro-font">Medical Information</p>
           </div>      
-      <at-textarea v-model="inputValue3" autosize placeholder="Please tell us about any pre-existing conditions"></at-textarea>
+      <at-textarea v-model="inputValue3" class="textarea" rows="14" placeholder="Please tell us about any pre-existing conditions"></at-textarea>
     </div>
 
   </div>
-
 
 <at-button type="primary" @click="previousStep" style="margin-top: 12px;">Prev</at-button>
 <at-button type="primary" v-if='current < 2' @click="nextStep" style="margin-top: 12px; margin-left: 12px">Next</at-button>
@@ -213,6 +212,14 @@ data () {
    width: 240px;
    margin-left: 30px
   }
+ .textarea {
+ width: 365px; 
+ height: 150px;
+ padding-left:17px;
+ padding-top:10px;
+ resize: none;
+}
+
 
 </style>
 
