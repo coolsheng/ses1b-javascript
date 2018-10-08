@@ -12,6 +12,9 @@
         <nuxt-link to="/profile"> 
         <at-button size="large"  >Login</at-button>
         </nuxt-link>
+        <nuxt-link to="/signup"> 
+        <at-button size="large"  >Sign Up</at-button>
+        </nuxt-link>
       </div>
     <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 
@@ -25,11 +28,13 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import facebook from '~/components/facebook.vue'
 
 export default {
   layout: 'blank',
   components: {
-    AppLogo
+    AppLogo,
+    facebook
   },
     methods: {
     onSignIn (user) {
