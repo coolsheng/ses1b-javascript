@@ -20,6 +20,10 @@
           <at-button size="large">
             <section class="lastResort">Login</section></at-button>
          </nuxt-link>
+                  <nuxt-link to="/register"> 
+          <at-button size="large">
+            <section class="lastResort">Register</section></at-button>
+         </nuxt-link>
         </div>
         
         <section style="margin-top: 9px" class="textContainer">
@@ -39,6 +43,7 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+
 export default {
   layout: 'blank',
     components: {
