@@ -4,7 +4,7 @@
     
 
     <div class="clear">
-    <at-textarea  v-model="inputValue3" class="textarea"
+    <at-textarea  class="textarea"
              spellcheck="true" draggable="false" rows="15" placeholder="Message (optional)">
              </at-textarea>
     </div><br>
