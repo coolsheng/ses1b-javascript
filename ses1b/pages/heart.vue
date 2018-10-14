@@ -3,6 +3,7 @@
                 <video ref="video" id="video" width="auto" height="300" autoplay></video>
 
 <div>
+    <p> place fingers in front of camera and click button below to measure heart rate </p>
                     <p> {{bpm}} bpm </p>
                     <button @click="calculate()">Calculate</button>
 </div>
