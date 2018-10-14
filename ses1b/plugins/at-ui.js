@@ -7,8 +7,10 @@ import { AmplifyPlugin } from 'aws-amplify-vue';
 import aws_exports from './aws-exports';
 Amplify.configure(aws_exports);
 
+import VueRouter from 'vue-router'
+
 Vue.use(AmplifyPlugin, AmplifyModules);
 
-
+Vue.use(VueRouter);
 //import ui-style or import the unbuilt version of SCSS
-Vue.use(AtComponent)
+Vue.use(AtComponent);
