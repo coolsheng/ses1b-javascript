@@ -22,7 +22,10 @@
               <at-input v-model="inputValue" placeholder="Full Name" filterable size="large" class="input-field"></at-input>
       </div>
       
+      <div class="clear">
+          <p class="block">► Gender</p> <br>
 
+      </div>
       
       <div class="clear">
            <p class="block">► Birthday</p><br>
