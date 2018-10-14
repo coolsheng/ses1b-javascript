@@ -22,16 +22,20 @@
               <at-input v-model="inputValue" placeholder="Full Name" filterable size="large" class="input-field"></at-input>
       </div>
       
-      <div class="clear">
-          <p class="block">► Gender</p> <br>
-      <at-radio-group v-model="radio3">
-        <at-radio label="1">Option One</at-radio>
-        <at-radio label="2">Option Two</at-radio>
-        <at-radio label="3">Option Three</at-radio>
-      </at-radio-group>
-      </div>
+
       
       <div class="clear">
+
+      <div class="clear">
+          <p class="block">► Gender</p> <br>
+<at-select v-model="model1" style="width:100px; margin-right: 150px;">
+  <at-option value="1">Female</at-option>
+  <at-option value="2">Male</at-option>
+  <at-option value="3">Other</at-option>
+  <at-option value="4">Orange</at-option>
+</at-select>
+      </div>
+      
            <p class="block">► Birthday</p><br>
             
             <div style="margin-left:28px">
