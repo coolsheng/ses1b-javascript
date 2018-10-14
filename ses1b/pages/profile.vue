@@ -24,7 +24,11 @@
       
       <div class="clear">
           <p class="block">► Gender</p> <br>
-
+      <at-radio-group v-model="radio3">
+        <at-radio label="1">Option One</at-radio>
+        <at-radio label="2">Option Two</at-radio>
+        <at-radio label="3">Option Three</at-radio>
+      </at-radio-group>
       </div>
       
       <div class="clear">
