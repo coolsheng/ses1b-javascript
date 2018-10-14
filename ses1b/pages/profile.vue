@@ -16,6 +16,15 @@
 
       
       <div class="clear">
+          <p  class="block">► Gender</p> <br>
+            <at-radio-group v-model="radio3" style="margin-right: 143px ; padding-top:2px " >
+              <at-radio label="1">Male</at-radio>
+              <at-radio label="2">Female</at-radio>
+              <at-radio label="3">Other</at-radio>
+            </at-radio-group> 
+      </div>
+      
+      <div class="clear">
            <p class="block">► Birthday</p><br>
             
             <div style="margin-left:28px">
