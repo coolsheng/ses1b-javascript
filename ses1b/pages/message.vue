@@ -2,6 +2,7 @@
 
 <section align="center">
 
+    <p>Select your doctor:</p>
       <at-select v-model="model2" style="width: 150px; margin-top: 20px">
   <at-option value="1">Test Doctor1</at-option>
   <at-option value="2">Test Doctor 2</at-option>

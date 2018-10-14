@@ -66,7 +66,7 @@ data(){
     },
     checkLogin(){
       if(this.registerPassword == this.password && this.registerUsername == this.username && this.password != ""){
-        window.location.href = "/message";
+        window.location.href = "/profile";
       }
       else{
           this.$Message.error('Login failed: please check your username and password are correct')
