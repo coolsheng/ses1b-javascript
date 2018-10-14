@@ -4,7 +4,7 @@
       <at-menu-item name="1" to='/maps'><i class="icon icon-map-pin"></i>Maps</at-menu-item>
       <at-menu-item name="2" to="/message"><i class="icon icon-message-square"></i>Message</at-menu-item>
       <at-menu-item name="3" to="/heart"><i class="icon icon-heart-on"></i>Heart</at-menu-item>
-      <at-menu-item name="4" to="/settings"><i class="icon icon-settings"></i>Settings</at-menu-item>
+      <at-menu-item name="4" to="/settings"><i class="icon icon-settings"></i></at-menu-item>
     </at-menu>
     <nuxt/>
   </div>
