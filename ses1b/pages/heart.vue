@@ -18,7 +18,7 @@ export default {
         mounted() { 
     this.video = this.$refs.video;
     if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-        navigator.mediaDevices.getUserMedia({ facingMode: {exact: "environment"}  }).then(stream => {
+        navigator.mediaDevices.getUserMedia({ video:  {facingMode: {exact: "environment"}} }).then(stream => {
             this.video.src = window.URL.createObjectURL(stream);
             this.video.play();
         });
