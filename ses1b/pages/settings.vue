@@ -3,7 +3,7 @@
 <at-menu active-name="1-1" inline-collapsed style="width:100%">
   <at-submenu>
     <template slot="title"><i class="icon icon-user"></i>Profile</template>
-    <at-menu-item name="1-1">Name</at-menu-item>
+    <at-menu-item name="1-1" on-select="modalConfirm">Name</at-menu-item>
     <at-menu-item name="1-2">Gender</at-menu-item>
     <at-menu-item name="1-3">Birthday</at-menu-item>
     <at-menu-item name="1-4">Height</at-menu-item>
@@ -16,7 +16,7 @@
     <at-menu-item name="2-3">Heart Rate Data</at-menu-item>
     <at-menu-item name="2-4">Misc</at-menu-item>
   </at-submenu>
-  <at-menu-item to="/logout"><i class="icon icon-home"></i>Log out</at-menu-item>
+  <at-menu-item to="/"><i class="icon icon-home"></i>Log out</at-menu-item>
 </at-menu>
 
     </section>
