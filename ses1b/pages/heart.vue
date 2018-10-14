@@ -2,10 +2,10 @@
 <div>
                 <video ref="video" id="video" width="auto" height="300" autoplay></video>
 
-<div>
+<div align="center">
     <p> place fingers in front of camera and click button below to measure heart rate </p>
-                    <p> {{bpm}} bpm </p>
-                    <button @click="calculate()">Calculate</button>
+                    <b><p style="margin-top:10px"> {{bpm}} bpm </p></b>
+                    <at-button style="margin-top:10px" @click="calculate()">Calculate</at-button>
 </div>
 </div>
 </template>

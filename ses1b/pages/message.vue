@@ -1,15 +1,20 @@
 <template>
 
 <section align="center">
-    
+
+      <at-select v-model="model2" style="width: 150px; margin-top: 20px">
+  <at-option value="1">Test Doctor1</at-option>
+  <at-option value="2">Test Doctor 2</at-option>
+
+</at-select>  
 
     <div class="clear">
-    <at-textarea  class="textarea"
-             spellcheck="true" draggable="false" rows="15" placeholder="Message (optional)">
+    <at-textarea v-model="wow" style="width: auto; margin-top: 10px; padding-left: 5px; padding-right: 5px"
+             spellcheck="true" draggable="false" rows="5" placeholder="Message (optional)">
              </at-textarea>
     </div><br>
-    
-    <section style="margin-top:110px">
+
+    <section style="margin-top:10px">
     <div class="clear">
          <p class="intro-font">Capture Image </p>
     </div>
@@ -31,7 +36,7 @@
      </div>
    
     <div class="clear">
-         <at-button style="margin-top: 40px;" type="primary">Send Message</at-button>
+         <at-button style="margin-top: 40px;" type="primary" @click="refresh()">Send Message</at-button>
     </div>
     </section>
 </section>
@@ -40,7 +45,17 @@
 
 <script>
 export default {
-    
+    data(){return{
+        wow: ""
+    }},
+    methods:{
+        refresh(){
+            // window.location.reload(false);
+          this.$Message.loading('Sending message')
+            this.wow ="";
+                console.log(this.wow);
+}
+    }
 }
 </script>
 
@@ -59,12 +74,5 @@ export default {
   clear: both;
   }
 
-.textarea {
- width: 365px; 
- height: 150px;
- padding-left:75px;
- padding-top:10px;
- resize: none;
-}
 
 </style>
