@@ -13,23 +13,7 @@
  
   <div >
     <div v-show="current==0">
-      <div class="clear">
-          <p class="intro-font">Personal Information</p>
-      </div>
-      
-      <div class="clear">
-          <p class="block">► Name</p> 
-              <at-input v-model="inputValue" placeholder="Full Name" filterable size="large" class="input-field"></at-input>
-      </div>
-      
-      <div class="clear">
-          <p  class="block">► Gender</p> <br>
-            <at-radio-group v-model="radio3" style="margin-right: 143px ; padding-top:2px " >
-              <at-radio label="1">Male</at-radio>
-              <at-radio label="2">Female</at-radio>
-              <at-radio label="3">Other</at-radio>
-            </at-radio-group> 
-      </div>
+
       
       <div class="clear">
            <p class="block">► Birthday</p><br>
