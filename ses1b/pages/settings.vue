@@ -3,8 +3,8 @@
 <at-menu active-name="1-1" inline-collapsed style="width:100%">
   <at-submenu>
     <template slot="title"><i class="icon icon-user"></i>Profile</template>
-    <at-menu-item name="1-1" on-select="modalConfirm">Name</at-menu-item>
-    <at-menu-item name="1-2">Gender</at-menu-item>
+    <at-menu-item name="1-1" on-select>Name</at-menu-item>
+    <at-menu-item name="1-2" on-select>Gender</at-menu-item>
     <at-menu-item name="1-3">Birthday</at-menu-item>
     <at-menu-item name="1-4">Height</at-menu-item>
     <at-menu-item name="1-5">Weight</at-menu-item>
@@ -34,6 +34,9 @@
         }).catch(() => {
           this.$Message('Click \'Cancel\' Button')
         })
+      },
+      fuck: function(){
+        console.log("gay");
       }
     }
   }

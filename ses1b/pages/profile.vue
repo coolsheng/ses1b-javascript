@@ -144,13 +144,8 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
-
 export default {
   layout: 'blank',
-      components: {
-    AppLogo
-  },
 data () {
       return {
         current: 0,
