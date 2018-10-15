@@ -132,7 +132,7 @@
          <div class="clear">
               <p class="intro-font">Medical Information</p>
           </div>      
-      <at-textarea class="textarea" rows="14" placeholder="Please tell us about any pre-existing conditions"></at-textarea>
+      <at-textarea class="textarea" rows="3" placeholder="Please tell us about any pre-existing conditions"></at-textarea>
     </div>
 
   </div>
