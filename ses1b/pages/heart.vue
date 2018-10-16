@@ -1,6 +1,6 @@
 <template>
 <div>
-                <video ref="video" id="video" width="auto" height="300" autoplay></video>
+          <div align="center">      <video ref="video" id="video" width="auto" height="300" autoplay></video> </div>
 
 <div align="center">
     <p> place fingers in front of camera and click button below to measure heart rate </p>

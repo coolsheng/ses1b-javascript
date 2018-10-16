@@ -2,6 +2,7 @@
   <section class="container">
     <div>
       <app-logo/>
+      <b><p> Health Konnect </p></b>
         <div v-show="register">
           <p>Enter your credentials below</p>
         <section class="textContainer" >
@@ -27,10 +28,8 @@
         </section>
 
         <div class="links">
-          <!-- <nuxt-link to="/profile">  -->
           <at-button size="large" v-if="!register">
             <section class="lastResort" @click="checkLogin()">Login</section></at-button>
-         <!-- </nuxt-link> -->
           <at-button size="large" v-if="register" @click="submitRegister()" > Register</at-button>
         </div>
         
